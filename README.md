@@ -1,4 +1,4 @@
-# vagrant-php-devbox
+# vagrant-php-box
 
 [Vagrant](http://www.vagrantup.com/) configuration for Apache, PHP, MySQL, [sass](http://sass-lang.com), [foundation](http://foundation.zurb.com), [compass](http://compass-style.org)
 
@@ -8,7 +8,7 @@ This project is inspired by [evansims/vagrant-devbox](https://github.com/evansim
 How to install this development environment:
 
 1. Install [Vagrant](http://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-2. Clone this repo and go to your local copy in terminal
+2. Clone this repo (`git clone git://github.com/fabiancz/vagrant-php-box`) and go to your local copy in terminal
 3. Install modules with command `git submodule update --init` (in repo dir)
 4. Bring everything up with `vagrant up`. It will take some time to download vagrant box. Then [Puppet](http://puppetlabs.com) will deal with installation and configuration of the services.
 
