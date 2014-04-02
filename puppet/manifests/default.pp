@@ -46,7 +46,7 @@ class setup_toolbox {
 	}
 }
 
-class codeamte_setup_sass {
+class setup_sass {
 	# we don't need to include nodejs. It's included by this call, and variable manage_repo is se to true
 	# see http://stackoverflow.com/questions/22696271/puppet-set-variable-in-nodejs-module/22697182 for details:)
 	class {'nodejs':
@@ -85,4 +85,4 @@ include setup_toolbox
 include setup_apache
 include setup_php
 include setup_mysql
-include codeamte_setup_sass
+include setup_sass
