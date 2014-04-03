@@ -20,6 +20,10 @@ class setup_php {
 		ensure  => "installed",
 		require => Exec['apt-get update'],
 	}
+	exec { 'composer':
+		command => 'curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer',
+		require => Package['php5']
+	}
 }
 
 class setup_mysql {
